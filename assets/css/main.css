@@ -18,7 +18,11 @@
 .header__navbar-item {
     margin: 0 8px;
     min-height: 26px;
-    
+    position: relative;
+}
+
+.header__navbar-item--qr:hover > .header__qr {
+    display: block;
 }
 
 .header__navbar-item,
@@ -49,11 +53,7 @@
 }
 
 .header__navbar-item--strong {
-    font-weight: 400;
-}
-
-.header__navbar-item--separate {
-    position: relative;
+    font-weight: 500;
 }
 
 .header__navbar-item--separate::after {
@@ -79,17 +79,46 @@
     font-size: 1.8rem;
     margin: 0 4px;
 }
-/* 
+
+/* Header Qr code */
+.header__qr {
+    background-color: var(--white-color);
+    width: 186px;
+    height: 216px;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    padding: 8px;
+    border-radius: 2px;
+    display: none;
+    animation: fadein ease-in 0.5s;
+}
+
+.header__qr::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: -16px;
+    display: block;
+    background-color: transparent;
+}
 
 
+.header__qr-img {
+    width: 100%;
+}
 
+.header__qr-apps {
+    display: flex;
+    margin: 0 11px;
+    justify-content: space-between;
+}
 
-
-
-
-
- */
-
+.header__qr-download-img {
+    height: 15px;
+}
 
 
 
