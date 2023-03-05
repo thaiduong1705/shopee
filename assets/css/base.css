@@ -3,8 +3,12 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: #ee2d2d;
+    --primary-color: #f95230;
     --border-color: #dbdbdb;
+
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -43,6 +47,15 @@ html {
     }
 }
 
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -51,12 +64,14 @@ html {
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    animation: fadein linear 0.1s;
 }
 
 .modal-dialog {
     width: 500px;
     min-height: 300px;
     margin: auto;
+    animation: grow linear 0.1s;
 }
 
 .btn {
