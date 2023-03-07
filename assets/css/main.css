@@ -657,3 +657,42 @@
     top: -10px;
     right: -10px;
 }
+
+.header__cart-ul {
+    
+}
+
+.header__cart-item {
+    display: flex;
+}
+.header__cart-item-img {
+    width: 42px;
+    height: 42px;
+}
+.header__cart-item-info {
+
+}
+.header__cart-item-name {
+
+}
+.header__cart-item-type {
+
+}
+.header__cart-item-col {
+
+}
+.header__cart-item-price {
+
+}
+.header__cart-item-number {
+
+}
+.header__cart-item-qnt {
+
+}
+.header__cart-item-amount {
+
+}
+.header__cart-item-btn {
+
+}
