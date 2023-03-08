@@ -35,7 +35,23 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
 }
+
+/* Test */
+
+.grid__column-2 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+}
+.grid__column-10 {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3333%;
+}
+
 
 /* Animation */
 @keyframes fadein {
@@ -103,5 +119,7 @@ html {
 
 .btn.btn__link {
     height: 32px;
-
 }
+
+
+
