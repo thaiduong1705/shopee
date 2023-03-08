@@ -101,7 +101,7 @@ html {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    background: none;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,5 +121,9 @@ html {
     height: 32px;
 }
 
+/* Padding */
+.pt-24 {
+    padding-top: 24px;
+}
 
 
