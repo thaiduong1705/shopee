@@ -947,6 +947,48 @@
     font-size: 1.4rem;
     padding: 0 8px;
     cursor: pointer;
+    position: relative;
+}
+.select-input:hover > .select-input__list {
+    display: block;
+}
+.select-input__list::before {
+    content: "";
+    background-color: transparent;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+.select-input__list {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    width: 100%;
+    display: none;
+}
+.select-input__list:first-child {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.select-input__list:last-child {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.select-input__item {
+    padding: 12px 8px;
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+.select-input__item:hover {
+    color: var(--primary-color);
 }
 
 .home-filter__paginator {
