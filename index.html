@@ -274,18 +274,19 @@
 
                     <div class="grid__column-10">
                         <div class="home-filter">
-                            <span class="home-filter__title">
-                                Sắp xếp theo
-                            </span>
-                            <button class="btn ">Phổ biến</button>
-                            <button class="btn btn--primary">Mới nhất</button>
-                            <button class="btn btn--primary">Bán chạy</button>
-
-                            <div class="select-input">
-                                <span class="select-input__label">Giá</span>
-                                <i class="fa-solid fa-angle-down"></i>
+                            <div class="home-filter__group">
+                                <span class="home-filter__title">
+                                    Sắp xếp theo
+                                </span>
+                                <button class="btn filter-btn filter-btn--active">Phổ biến</button>
+                                <button class="btn filter-btn">Mới nhất</button>
+                                <button class="btn filter-btn">Bán chạy</button>
+    
+                                <div class="select-input">
+                                    <span class="select-input__label">Giá</span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
                             </div>
-
                             <div class="home-filter__paginator">
                                 <span class="home-filter__paginator-num">
                                     <span class="home-filter__paginator-current">1</span>
@@ -293,7 +294,7 @@
                                     <span class="home-filter__paginator-total">14</span>
                                 </span>
                                 <div class="home-filter__paginator-controls">
-                                    <button class="home-filter__paginator-controls--prev">
+                                    <button class="home-filter__paginator-controls--prev home-filter__paginator--disabled">
                                         <i class="fa-solid fa-chevron-left"></i>
                                     </button>
                                     <button class="home-filter__paginator-controls--next">
