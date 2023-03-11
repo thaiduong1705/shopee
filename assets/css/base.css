@@ -133,4 +133,13 @@ html {
     padding-top: 24px;
 }
 
+/* Margin */
+.mt-42 {
+    margin-top: 42px;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
 
